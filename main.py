@@ -3,7 +3,7 @@ print("Welcome to Zikurat!") #welcome message
 def get_name(): #fuction to get a name of a person
     while True:
         name = input("What is ur name?").strip()
-        if len(name) > 2 and len(name) <20:
+        if len(name) >= 2 and len(name) <=20:
             return name.strip()
         else:
             print("invalid name")
@@ -12,10 +12,10 @@ def get_age(): #fuction to get a age of a person
     while True:
         try:
             age = int(input("What is ur age?"))
-            if age < 0:
-                print("invalid age")
-            else: 
+            if age >= 0 and age <= 120:
                 return age
+            else:
+                print("invalid age")
         except ValueError:
             print("invalid number")
 
