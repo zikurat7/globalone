@@ -27,7 +27,39 @@
 #     print(number)
 #     number += 1
 
-for i in range(5):
-    if i == 3:
-        continue
-    print(i)
+# for i in range(5):
+#     if i == 3:
+#         continue
+#     print(i)
+
+# user = {
+#     "name": "Alex",
+#     "age": 28,
+#     "city": "Amsterdam"
+# }
+
+# print(user["name"])
+
+# user["job"] = "Developer"
+# print(user["job"])
+# user["age"] = 29
+# print(user["age"])
+
+# for key, value in user.items():
+#     print(key, value)
+
+# def multiply(a, b):
+#     return a * b
+# result = multiply(3, 5)
+# print(f"answer: {result}")
+
+def birtdate(birth_year):
+    age = 2026 - birth_year
+    return age
+user_age = birtdate(2012)
+if user_age >= 18:
+    print("ur adult")
+else:
+    print("ur a kid")
+
+print(f"Your age: {user_age}")
