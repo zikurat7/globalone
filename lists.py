@@ -19,7 +19,7 @@ def rem(): #function to remove user
             print(f"User {remove_user} deleted!")
             break
         except ValueError:
-            print("invalid user")
+            print("invalid user!")
 rem()
 
 numbers = len(users)
