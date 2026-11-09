@@ -1,4 +1,3 @@
-
 # name = ["Jack", "Kok", "Mom"]
 
 
@@ -20,8 +19,10 @@
 # calculate_total(160, 15)
 # calculate_total(hours = 160, rate = 15, tax = 20)
 
+
 def show_user(**users):
     for key, value in users.items():
         print(f"{key}: {value}")
+
 
 show_user(name="Alex", age=28, city="Amsterdam")

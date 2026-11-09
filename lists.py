@@ -1,10 +1,11 @@
-print("List of users:") 
-users = ["Alex", "John", "Max"] #[]this is list
+print("List of users:")
+users = ["Alex", "John", "Max"]  # []this is list
 
 for user in users:
     print(user)
 
-def add(): #function to add 2 users
+
+def add():  # function to add 2 users
     while True:
         new_user = input("Enter name to add: ").strip()
         if not new_user:
@@ -17,7 +18,8 @@ def add(): #function to add 2 users
         print(f"New user {new_user} was added!")
         break
 
-def rem(): #function to remove user
+
+def rem():  # function to remove user
     while True:
         remove_user = input("Enter name to delete: ").strip()
 
@@ -35,6 +37,7 @@ def rem(): #function to remove user
 
         else:
             print("invalid user!")
+
 
 add()
 add()
