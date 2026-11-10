@@ -16,7 +16,7 @@ email = input("Enter email: ").strip()
 
 # Connect to PostgreSQL
 with psycopg.connect(
-    host="localhost", port=5432, dbname="globalone", user="postgres", password=25426
+    host="localhost", port=5432, dbname="globalone", user="postgres", password=password
 ) as connection:
 
     with connection.cursor() as cursor:

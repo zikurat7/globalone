@@ -1,11 +1,17 @@
+import os
 import psycopg
+from dotenv import load_dotenv
+
+load_dotenv()
+
+password = os.getenv("PGPASSWORD")
 
 connection = psycopg.connect(
     host="localhost",
     port=5432,
     dbname="globalone",
     user="postgres",
-    password="25426",
+    password=password,
 )
 
 cursor = connection.cursor()
