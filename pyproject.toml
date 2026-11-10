@@ -8,8 +8,10 @@ authors = [
 ]
 requires-python = ">=3.9"
 dependencies = [
+    "alembic>=1.16.5",
     "psycopg[binary]>=3.2.13",
     "python-dotenv>=1.2.1",
+    "sqlalchemy>=2.0.57",
 ]
 
 [project.scripts]
