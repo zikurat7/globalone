@@ -1,5 +1,19 @@
-numbers = [1, 2, 3, 4, 5, 6]
+def main():
+    number = get_number()
+    meow(number)
 
-result = [number * 2 for number in numbers if number % 2 == 0]
 
-print(f"Result!: {result}")
+def get_number():
+    while True:
+        n = int(input("Enter a number: "))
+        if n > 0:
+            break
+    return n
+
+
+def meow(n):
+    for _ in range(n):
+        print("Meow!")
+
+
+main()

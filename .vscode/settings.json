@@ -13,5 +13,6 @@
             "password": "25426"
         }
     ],
-    "python.terminal.useEnvFile": true
+    "python.terminal.useEnvFile": true,
+    "cSpell.language": "en"
 }
