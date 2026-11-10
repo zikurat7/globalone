@@ -7,7 +7,9 @@ authors = [
     { name = "zikurat7", email = "zakeratt21@gmail.com" }
 ]
 requires-python = ">=3.9"
-dependencies = []
+dependencies = [
+    "psycopg[binary]>=3.2.13",
+]
 
 [project.scripts]
 globalone = "globalone:main"
