@@ -12,5 +12,6 @@
             "username": "postgres",
             "password": "25426"
         }
-    ]
+    ],
+    "python.terminal.useEnvFile": true
 }

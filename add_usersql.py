@@ -1,7 +1,9 @@
 import os
 import psycopg
+from dotenv import load_dotenv
 
-# Get database password from environment
+load_dotenv()
+
 password = os.getenv("PGPASSWORD")
 
 if not password:
