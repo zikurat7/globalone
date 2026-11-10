@@ -10,4 +10,4 @@ settings.json
 # Virtual environments
 .venv
 .env
-.vscode
+.vscode/settings.json
