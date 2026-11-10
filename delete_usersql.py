@@ -15,10 +15,10 @@ def delete_user(user_id):
         raise RuntimeError("Please set the PGPASSWORD environment variable.")
 
     with psycopg.connect(
-        host="localhost",
-        port=5432,
-        dbname="globalone",
-        user="postgres",
+        host=os.getenv("PGHOST", "localhost"),
+        port=int(os.getenv("PGPORT", "5432")),
+        dbname=os.getenv("PGDATABASE", "globalone"),
+        user=os.getenv("PGUSER", "postgres"),
         password=password,
     ) as connection:
         with connection.cursor() as cursor:
