@@ -1,0 +1,18 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "sqltools.connections": [
+        {
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "globalone",
+            "database": "globalone",
+            "username": "postgres",
+            "askForPassword": true
+        }
+    ],
+    "python.terminal.useEnvFile": true,
+    "cSpell.language": "en"
+}
