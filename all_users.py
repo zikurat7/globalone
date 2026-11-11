@@ -9,7 +9,7 @@ def get_all_users():
     password = os.getenv("PGPASSWORD")
 
     if not password:
-        raise RuntimeError("Please set the PGPASSWORD environment variable.")
+        raise RuntimeError("Please set the PGPASSWORD environment variable!.")
 
     with psycopg.connect(
         host=os.getenv("PGHOST", "localhost"),
