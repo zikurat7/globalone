@@ -7,7 +7,7 @@ from globalone.models import Base
 
 @pytest.fixture(scope="session", autouse=True)
 def setup_database():
-    database_url = f"postgresql://postgres:{os.getenv('PGPASSWORD')}@localhost:5432/globalone"
+    database_url = f"postgresql+psycopg://postgres:{os.getenv('PGPASSWORD')}@localhost:5432/globalone"
     engine = create_engine(database_url)
 
     Base.metadata.create_all(engine)
