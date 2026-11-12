@@ -1,7 +1,5 @@
-# This is a testing project for a sole purpose of learning python
-maybe one day i will become a full-stack python developer =)
 
-## First SQLAlchemy model
+## SQLAlchemy model
 
 `src/globalone/models.py` defines a `User` model mapped to the existing
 `users` table. `Base` is the shared declarative base; SQLAlchemy registers
